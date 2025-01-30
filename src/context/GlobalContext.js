@@ -1,6 +1,6 @@
 "use client";
 import React, { createContext, useContext, useState } from "react";
-
+//Hello
 const GlobalContext = createContext();
 
 export const GlobalProvider = ({ children }) => {
