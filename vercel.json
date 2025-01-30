@@ -1,8 +1,9 @@
 {
   "version": 2,
   "functions": {
-    "api/**": {
-      "maxDuration": 40
+    "src/app/api/gemini/**": {
+      "maxDuration": 30,
+      "memory": 512
     }
   }
 }
