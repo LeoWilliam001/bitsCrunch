@@ -18,6 +18,7 @@ export async function POST(req) {
     }
 
     thinkingProcess.push("Analyzing user query...")
+    console.log("Analyzing user query...");
 
     // Define category prompt
     const categoryPrompt = `
@@ -80,6 +81,7 @@ export async function POST(req) {
           },
           body: JSON.stringify(body),
         })
+        console.log(response);
 
         if (!response.ok) {
           throw new Error(`HTTP error! Status: ${response.status}`)
