@@ -6,6 +6,7 @@ import { WagmiProvider, useAccount } from "wagmi";
 import { useEffect } from "react";
 import { useRouter } from "next/navigation";
 import { config } from "./wagmi"; // Ensure correct import
+import Server from "./request/Server"
 import "@rainbow-me/rainbowkit/styles.css";
 import "./page.css";
 
@@ -26,6 +27,7 @@ const HomeContent = () => {
     <main  className="h-full flex flex-col justify-center items-center py-80 bg-[url(/background/bg-img.png)]">
       <ConnectButton />
       {isConnected && <p>Wallet Address: {address}</p>} {/* Show address */}
+      <Server/>
     </main>
   );
 };
